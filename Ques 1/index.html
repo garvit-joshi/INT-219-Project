@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>assignment</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+<div id="content">
+<form name="RegForm"  onsubmit="return VALIDATE()" method="post"><fieldset style="border:2px  ">
+<h1>Book Appointment</h1><br>
+<hr>
+<input type="text" id="Funame" placeholder="ENTER FULL NAME" name="Fname" required><br>
+<input type="text" id="contact" placeholder="ENTER MOBILE NUMBER" name="mobile" required><br>
+<input type="text" id="email" placeholder="ENTER EMAIL" name="email" required><br>
+<input type="text" id="add" placeholder="ENTER ADDRESS" name="add" required><br>
+<h3>Address Details</h3>
+<input type="text1" id="area" placeholder="ENTER AREA" name="area" required>
+<input type="text2" id="city" placeholder="ENTER CITY" name="city" required><br>
+<input type="text3" id="state" placeholder="ENTER STATE" name="state" required>
+<input type="text4" id="code" placeholder="ENTER POSTAL CODE" name="code"required><br>
+<input type="submit" value="BOOK APPOINTMENT">
+<script> 
+function VALIDATE()                                    
+{ 
+   
+	 var val = document.getElementById('Funame').value;
+    
+    if (!val.match(/^[a-zA-Z]+$/)) 
+    {
+        alert('IN name section Only String is allowed');
+        return false;
+    }
+	 var contact = document.getElementById('contact').value;
+	 if(isNaN(contact)){
+                     alert("Contact should be number only");
+                     return false;
+                 }
+				 
+				 var x = document.getElementById('email').value;
+				  var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a  valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+  }  
+   var val = document.getElementById('city').value;
+    
+    if (!val.match(/^[a-zA-Z]+$/)) 
+    {
+        alert('city name must contain only alphabets');
+        return false;
+    }
+	var val = document.getElementById('state').value;
+    
+    if (!val.match(/^[a-zA-Z]+$/)) 
+    {
+        alert('state name must contain only alphabets');
+        return false;
+    }
+  var code = document.getElementById('code').value;
+	 if(isNaN(code)){
+                     alert("postal code must be numeric");
+                     return false;
+                 }
+	 
+	
+	
+	
+	}
+</script>
+
+
+</form>
+</div>
+</body>
+</html>
+

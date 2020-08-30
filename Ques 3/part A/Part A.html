@@ -1,0 +1,33 @@
+<html>
+<head><title></title></head>
+<body>
+<table border=2>
+<tr onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)">
+<th>Name</th>
+<th>Regno</th>
+</tr>
+<tr onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)">
+ <td>Ram</td>
+ <td>2000</td>
+</tr>
+<tr onmouseover="ChangeBackgroundColor(this)" onmouseout="RestoreBackgroundColor(this)">
+ <td>Sham</td>
+ <td>3000</td>
+</tr>
+</table>
+<script type="text/javascript" >
+
+    var TableBackgroundNormalColor = "#ffffff";
+    var TableBackgroundMouseoverColor = "#FF0000";
+
+    // These two functions need no customization.
+    function ChangeBackgroundColor(row) {
+        row.style.backgroundColor = TableBackgroundMouseoverColor;
+    }
+
+    function RestoreBackgroundColor(row) {
+        row.style.backgroundColor = TableBackgroundNormalColor;
+    }
+</script>
+</body>
+</html>

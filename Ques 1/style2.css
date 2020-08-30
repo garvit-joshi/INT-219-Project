@@ -1,0 +1,102 @@
+*{
+padding:0;
+margin:0;
+}
+body{
+	
+	background-image: url(Doctor.png);
+	background-size:cover;
+	font-size:medium;
+	background-position:center;
+	
+}
+ 
+form {                                         
+    margin: 0 auto; 
+    width: 600px; 
+	padding:50px;
+	
+}
+
+input[type=text] {
+  border: 2px solid black;
+  
+  width: 70%;
+  
+  color: black;
+    padding: 12px 40px;
+ margin: 8px 90px;
+}
+input[type=submit] {
+  border: 2px grey;
+  border-radius: 4px;
+  color:white;
+  background-color:black;
+  width:70%;
+    padding: 16px 32px;
+	 margin: 8px 90px;
+  
+}
+fieldset{
+	background-color:white;
+}
+h3{
+	margin:8px 90px;
+}
+
+
+h1{
+	margin:8px 90px;
+}
+input[type=text1] {
+	  
+  width: 35%;
+   padding: 16px 32px;
+  
+  
+   margin:8px 90px;
+    border: 2px solid black;
+	color: black;
+   
+  
+}
+input[type=text2] {
+	  
+  width:200px;
+   padding: 16px 10px;
+  
+  color: black;
+  margin:-85px ;
+    border: 2px solid black;
+	color: black;
+   
+  
+}
+input[type=text3] {
+	  
+  width: 35%;
+   padding: 16px 32px;
+  
+  
+   margin:8px 90px;
+    border: 2px solid black;
+	color: black;
+   
+  
+}
+input[type=text4] {
+	  
+  width:200px;
+   padding: 16px 10px;
+  
+  color: black;
+  margin:-85px ;
+    border: 2px solid black;
+	color: black;
+   
+  
+}
+
+
+
+  
